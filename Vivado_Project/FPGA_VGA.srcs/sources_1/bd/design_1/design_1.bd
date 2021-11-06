@@ -1,0 +1,316 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x56680D6100F6BCB9",
+      "device": "xc7z010clg400-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "vga_controller_0": "",
+      "graphics_controller_0": ""
+    },
+    "ports": {
+      "reset_rtl": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_sys_clock",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000"
+          }
+        }
+      },
+      "vsync_0": {
+        "direction": "O"
+      },
+      "hsync_0": {
+        "direction": "O"
+      },
+      "dir_x_0": {
+        "direction": "I"
+      },
+      "dir_y_0": {
+        "direction": "I"
+      },
+      "green_out_0": {
+        "direction": "O"
+      },
+      "blue_out_0": {
+        "direction": "O"
+      },
+      "red_out_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "610.719"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "685.392"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "34.694"
+          },
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "57.625"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "18.875"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "11"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      },
+      "vga_controller_0": {
+        "vlnv": "xilinx.com:module_ref:vga_controller:1.0",
+        "xci_name": "design_1_vga_controller_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "vga_controller",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "34692956",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "red_in": {
+            "direction": "I"
+          },
+          "green_in": {
+            "direction": "I"
+          },
+          "blue_in": {
+            "direction": "I"
+          },
+          "red_out": {
+            "direction": "O"
+          },
+          "green_out": {
+            "direction": "O"
+          },
+          "blue_out": {
+            "direction": "O"
+          },
+          "hsync": {
+            "direction": "O"
+          },
+          "vsync": {
+            "direction": "O"
+          }
+        }
+      },
+      "graphics_controller_0": {
+        "vlnv": "xilinx.com:module_ref:graphics_controller:1.0",
+        "xci_name": "design_1_graphics_controller_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "graphics_controller",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "34692956",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "dir_x": {
+            "direction": "I"
+          },
+          "dir_y": {
+            "direction": "I"
+          },
+          "red_out": {
+            "direction": "O"
+          },
+          "green_out": {
+            "direction": "O"
+          },
+          "blue_out": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "reset_rtl_1": {
+        "ports": [
+          "reset_rtl",
+          "clk_wiz_0/reset",
+          "vga_controller_0/rst",
+          "graphics_controller_0/rst"
+        ]
+      },
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "vga_controller_0/clk",
+          "graphics_controller_0/clk"
+        ]
+      },
+      "vga_controller_0_vsync": {
+        "ports": [
+          "vga_controller_0/vsync",
+          "vsync_0"
+        ]
+      },
+      "vga_controller_0_hsync": {
+        "ports": [
+          "vga_controller_0/hsync",
+          "hsync_0"
+        ]
+      },
+      "graphics_controller_0_red_out": {
+        "ports": [
+          "graphics_controller_0/red_out",
+          "vga_controller_0/red_in"
+        ]
+      },
+      "graphics_controller_0_green_out": {
+        "ports": [
+          "graphics_controller_0/green_out",
+          "vga_controller_0/green_in"
+        ]
+      },
+      "graphics_controller_0_blue_out": {
+        "ports": [
+          "graphics_controller_0/blue_out",
+          "vga_controller_0/blue_in"
+        ]
+      },
+      "dir_x_0_1": {
+        "ports": [
+          "dir_x_0",
+          "graphics_controller_0/dir_x"
+        ]
+      },
+      "dir_y_0_1": {
+        "ports": [
+          "dir_y_0",
+          "graphics_controller_0/dir_y"
+        ]
+      },
+      "vga_controller_0_green_out": {
+        "ports": [
+          "vga_controller_0/green_out",
+          "green_out_0"
+        ]
+      },
+      "vga_controller_0_blue_out": {
+        "ports": [
+          "vga_controller_0/blue_out",
+          "blue_out_0"
+        ]
+      },
+      "vga_controller_0_red_out": {
+        "ports": [
+          "vga_controller_0/red_out",
+          "red_out_0"
+        ]
+      }
+    }
+  }
+}

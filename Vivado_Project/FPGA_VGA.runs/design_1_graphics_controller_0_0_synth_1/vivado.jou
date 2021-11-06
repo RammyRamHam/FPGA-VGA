@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Nov  6 13:39:16 2021
+# Process ID: 1843
+# Current directory: /home/ramsey/Documents/Github_Repos/FPGA_VGA/Vivado_Project/FPGA_VGA.runs/design_1_graphics_controller_0_0_synth_1
+# Command line: vivado -log design_1_graphics_controller_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_graphics_controller_0_0.tcl
+# Log file: /home/ramsey/Documents/Github_Repos/FPGA_VGA/Vivado_Project/FPGA_VGA.runs/design_1_graphics_controller_0_0_synth_1/design_1_graphics_controller_0_0.vds
+# Journal file: /home/ramsey/Documents/Github_Repos/FPGA_VGA/Vivado_Project/FPGA_VGA.runs/design_1_graphics_controller_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_graphics_controller_0_0.tcl -notrace

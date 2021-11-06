@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Nov  6 13:39:16 2021
+# Process ID: 1843
+# Current directory: /home/ramsey/Documents/Github_Repos/FPGA_VGA/Vivado_Project/FPGA_VGA.runs/design_1_graphics_controller_0_0_synth_1
+# Command line: vivado -log design_1_graphics_controller_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_graphics_controller_0_0.tcl
+# Log file: /home/ramsey/Documents/Github_Repos/FPGA_VGA/Vivado_Project/FPGA_VGA.runs/design_1_graphics_controller_0_0_synth_1/design_1_graphics_controller_0_0.vds
+# Journal file: /home/ramsey/Documents/Github_Repos/FPGA_VGA/Vivado_Project/FPGA_VGA.runs/design_1_graphics_controller_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_graphics_controller_0_0.tcl -notrace
+Command: synth_design -top design_1_graphics_controller_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'design_1_graphics_controller_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1917 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1671.781 ; gain = 152.719 ; free physical = 7873 ; free virtual = 11359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_graphics_controller_0_0' [/home/ramsey/Documents/Github_Repos/FPGA_VGA/Vivado_Project/FPGA_VGA.srcs/sources_1/bd/design_1/ip/design_1_graphics_controller_0_0/synth/design_1_graphics_controller_0_0.vhd:68]
+INFO: [Synth 8-3491] module 'graphics_controller' declared at '/home/ramsey/Documents/Github_Repos/FPGA_VGA/HDL/graphics_controller.vhd:5' bound to instance 'U0' of component 'graphics_controller' [/home/ramsey/Documents/Github_Repos/FPGA_VGA/Vivado_Project/FPGA_VGA.srcs/sources_1/bd/design_1/ip/design_1_graphics_controller_0_0/synth/design_1_graphics_controller_0_0.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'graphics_controller' [/home/ramsey/Documents/Github_Repos/FPGA_VGA/HDL/graphics_controller.vhd:20]
